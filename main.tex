@@ -1,0 +1,225 @@
+
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{comment}
+
+%% Pkg's to use the inkscape snippet
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+%%
+\title[Penrose Pseudoinverse]{Moore-Penrose Pseudoinverse}
+\subtitle{Classical least squares problem}
+\author{J. Antonio Ortega}
+\institute{UNAM} 
+\date{\today}
+
+
+%% Definitions
+
+\newcommand{\incfig}[2][1]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex} }
+
+\pdfsuppresswarningpagegroup=1
+
+%%
+
+
+\begin{document}
+% has to be loaded outside of a frame to work!
+
+\frame{\titlepage}
+
+\begin{frame} % Decomposition
+
+\begin{columns}
+
+\column{0.49\linewidth}
+		
+{\color{violet} \textbf{Lemma}:} Let $x$ be a vector and $\mathcal{L}$ is a linear manifold in $\mathbb{R}^n$
+(\textit{i.e., } if $x, \, y \in \mathcal{L}$, then $\alpha a + \beta b \in \mathcal{L}$ for any scalars $\alpha, \, \beta$).
+
+Then if
+
+\[ x = \hat{x} + \tilde{x} \]
+
+\noindent where $\hat{x} \in \mathcal{L}$ and $\tilde{x} \perp \mathcal{L}$,
+then $\tilde{x}$ is \textit{"nearest"} to $x$, or, in other words, it is the \textcolor{violet}{projection}
+of $x$ to the \textcolor{violet}{manifold} $\mathcal{L}$.
+		
+\column{0.49\linewidth}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{decompositionvector}
+    \label{fig:decompositionvector}
+\end{figure}
+
+\end{columns}
+	
+\end{frame}
+
+\begin{frame}{} % Pitagoras
+	
+	\begin{columns}
+	
+	\column{0.49\linewidth}
+	
+
+{\color{violet} \textit{Proof.}:} For any $y \in \mathcal{L}$ we have
+
+\begin{align*}
+	\Vert x-y \Vert^2 &=  \Vert \hat{x} + \tilde{x} + y \Vert^2\\ 
+	&= \Vert (\hat{x}-y) + \tilde{x} \Vert^2 \\
+	&= \Vert (\hat{x}-y) \Vert^2  + 2(\hat{x}-y,\, \tilde{x})+ \Vert \tilde{x} \Vert^2\\ 
+	&= \Vert (\hat{x}-y) \Vert^2 + \Vert \tilde{x} \Vert^2 \\
+	& \geq \Vert \tilde{x} \Vert^2 = \Vert x -\hat{x} \Vert^2
+\end{align*}
+		
+\column{0.49\linewidth}
+		
+\begin{figure}[ht]
+    \centering
+    \incfig{pitagoras}
+    \label{fig:pitagoras}
+\end{figure}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame} % Lttle recall
+	\frametitle{Little Recall}
+	\framesubtitle{Linear mappings with non-sqare matrix}
+	
+\begin{figure}[ht]
+    \centering
+    \incfig{lineartrans}
+    \label{fig:lineartrans}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{} % minimizationTheorem
+	
+{\color{violet} \textbf{Theorem}:} Let $z$ be an $n-$dimensional real vector and $H \in \mathbb{R}^{n \times m}$.\\
+	
+\begin{itemize}
+	\item \textcolor{violet}{1.} There is always a vector, in fact a unique vector $\hat{x}$ of minimal (Euclidian norm), which minimizes
+
+	\[ \Vert z - H x \Vert^2. \]
+	
+	\item \textcolor{violet}{2.}The vector $\hat{x}$ is the unique vector in the range
+		
+	\[ \mathcal{R}(H^T) := \{ x : x = H^T z, z\in \mathbb{R}^n  \} \]
+	
+	\noindent which satisfies the equation
+	
+	\[ H \hat{x} = \hat{z} \]
+	
+	\noindent where $\hat{z}$ is the projection of $z$ on $\mathcal{R}(H).$
+
+	\end{itemize}
+\end{frame}
+
+\begin{frame} % theoremPart1
+	\begin{columns}
+	
+	\column{0.49\linewidth}
+
+		\textcolor{violet}{1.} There is always a vector, in fact a unique vector $\hat{x}$ of minimal (Euclidian norm), which minimizes
+
+		\[ \Vert z - H x \Vert^2. \]
+		
+	\column{0.49\linewidth}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{minhatx}
+    \label{fig:minhatx}
+\end{figure}
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Null Space (\textit{Kernel})}
+	
+	Make an little example about the null space
+\end{frame}
+
+\begin{frame}{}  % nullSpace of Z
+	
+	{\color{violet} \textit{Proof.}:} We can write
+		\[ z = \hat{z} + \tilde{z} \]
+		\noindent where $\hat{z}$ is the projection of $z$ on the kernel (\textit{null space})
+		
+		\[\mathcal{N}(H^T) := \{ z\in \mathbb{R}^n | H^T z = 0  \}. \]
+		
+		Since $Hx \in \mathcal{R}(H) $ for any $x \in \mathbb{R}^m$, it follows that
+		
+		\[ \hat{z} - Hx \in \mathcal{R}(H) \]
+		
+		\noindent and, since $\tilde{z} \in \mathcal{R^\perp}(H)$,
+		
+		\[ \tilde{z} \perp  \hat{z} - Hx, \, \therefore  \]
+		
+
+		\begin{align*}
+		\Vert z- Hx \Vert^2 &= \Vert (\hat{z}- Hx) + \tilde{z} \Vert^2\\
+		&=\Vert \hat{z}- Hx  \Vert^2 + \Vert \tilde{z} \Vert^2 \geq \Vert \tilde{z} \Vert^2 = \Vert z - \hat{z} \Vert^2
+		\end{align*}
+\end{frame}
+
+\begin{frame}{}  % x_{star} minimization
+	
+	$\Vert z- Hx \Vert^2 \geq  \Vert z - \hat{z} \Vert^2$ This low bound is attainable since $\hat{z}$, being the range of $H$, is the afterimage of some $x^\ast$, that is, $\hat{z}= H x^\ast$.\\
+	\vspace*{5mm}
+	\textcolor{violet}{1.} Let us show that $x^\ast$ has a minimal norm.
+	
+	\[ x^\ast = \hat{x}^\ast + \tilde{x}^\ast \]
+	
+	\noindent where $\hat{x}^\ast \in \mathcal{R}(H^\perp)$ and $\tilde{x}^\ast \in \mathcal{N}(H)$.\\
+	\vspace*{5mm}	
+	Thus, $H x^\ast = H\hat{x}$ we have $\Vert z- Hx^\ast \Vert^2 = \Vert z- H \hat{x} \Vert^2$ and $\Vert x^\ast \Vert^2 \geq \Vert \hat{x}^\ast \Vert^2 $.\\
+	\vspace*{5mm}
+	{\color{violet} So, $x^\ast$ may be selected equal to $\hat{x}^\ast.$ }
+\end{frame}
+
+\begin{frame}{} % Unicity of the solution
+	
+
+	\textcolor{violet}{2.} Show that $x^\ast = \hat{x}^\ast$ is unique. Suppose that $H x^\ast = H x^{\ast\ast}= \hat{z}$. Then
+	\[ (x^\ast - x^{\ast\ast} ) \in \mathcal{R}(H) \]
+	But, $H(x^\ast - x^{\ast\ast} ) = 0$, therefore $ (x^\ast - x^{\ast\ast} ) \in \mathcal{N}(H) = \mathcal{R^\perp}(H^\perp) $
+	
+	Thus, $(x^\ast - x^{\ast\ast} )$ is orthogonal to itself! i.e., $\Vert x^\ast  - x^{\ast\ast} \Vert^2 = 0 \implies x^\ast = x^{\ast\ast}. $
+
+\end{frame}
+
+\begin{frame}{}  %Corollary
+	
+	{\color{violet} \textbf{Corollary}:}  $\Vert z - H x \Vert^2$ is minimized by $x_0$ if and only if $H x_0 = \hat{z}$ where $\hat{z}$ is the projection of $z$ on $\mathcal{R}(H)$.
+	\vspace*{5mm}
+		
+	{\color{violet} \textbf{Corollary}:} There is always an $n-$dimensional vector $y$ such that
+	\[ \Vert z - H H^T y\Vert^2 = \inf_ x \Vert z - H x \Vert^2,\]
+	\noindent and if
+	\[ \Vert z - H x_0 \Vert^2 = \inf_ x \Vert z - H x \Vert^2,\]
+	\noindent then
+	\[ \Vert x_0 \Vert^2 \geq \Vert H^T y\Vert^2\]
+	with strict inequality unless $x_0 = H^T y$. The vector y satisfies the equation $H H^T y = \hat{z}$
+\end{frame}
+
+\begin{frame}{} % mainTheorem
+	
+	{\color{violet} \textbf{Theorem}:} Among those vectors $x$, which minimize $\Vert z - H x\Vert^2$, $\hat{x}$, the one having minimal norm, is the unique vector of the form:
+	\[\hat{x}= H^Ty,\]
+	\noindent satisfying
+	\[ H^T H \hat{x} = H^T z. \]
+\end{frame}
+
+
+\end{document}
