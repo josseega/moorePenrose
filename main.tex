@@ -32,6 +32,33 @@
 
 \frame{\titlepage}
 
+\begin{frame}
+	\frametitle{Motivational Example}
+	
+	\begin{columns}
+
+	\column{0.49\linewidth}
+		
+	Consider the following linear system's equation:
+
+	\begin{equation*}
+		\underbrace{\begin{bmatrix}
+			1 & 0 & -1 \\ 0 & 1 & 0 \\ 2 & 1 & 5
+		\end{bmatrix}}{H} \bar{x} =  \bar{z}
+	\end{equation*}
+
+	\column{0.49\linewidth}
+	
+\begin{figure}[ht]
+    \centering
+    \incfig{transRankcomp}
+    \label{fig:transRankcomp}
+\end{figure}
+
+	\end{columns}
+
+\end{frame}
+
 \begin{frame} % Decomposition
 
 \begin{columns}
@@ -144,10 +171,26 @@ of $x$ to the \textcolor{violet}{manifold} $\mathcal{L}$.
 	\end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame} % definitionKernel
 	\frametitle{Null Space (\textit{Kernel})}
 	
-	Make an little example about the null space
+	\begin{columns}
+
+	\column{0.49\linewidth}
+
+	\uncover<2->{ \begin{equation*}
+	\mathcal{N}(H) = \{ x \in \mathbb{R}^n | Hx=0 \}	
+	\end{equation*} }
+	\uncover<3->{ \textbf{Example}
+
+	Consider the following equation's system
+
+	}
+	
+	\column{0.49\linewidth}
+
+	\end{columns}
+
 \end{frame}
 
 \begin{frame}{}  % nullSpace of Z
