@@ -74,9 +74,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7031285"
-     inkscape:cx="327.82059"
-     inkscape:cy="258.13205"
+     inkscape:zoom="2.812514"
+     inkscape:cx="307.02069"
+     inkscape:cy="205.33231"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -84,13 +84,13 @@
      width="200mm"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1080"
-     inkscape:window-height="1892"
-     inkscape:window-x="0"
+     inkscape:window-width="2560"
+     inkscape:window-height="1412"
+     inkscape:window-x="1080"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="0"
-     inkscape:snap-global="false">
+     inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
        id="grid815"
@@ -156,59 +156,59 @@
        r="1.0654426" />
     <text
        xml:space="preserve"
-       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583;fill:#000000"
-       x="65.716064"
-       y="208.69334"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;fill:#000000;stroke-width:0.264583"
+       x="48.616856"
+       y="233.8969"
        id="text7355"><tspan
          sodipodi:role="line"
          id="tspan7353"
-         style="stroke-width:0.264583;fill:#000000"
-         x="65.716064"
-         y="208.69334">$x$</tspan></text>
+         style="fill:#000000;stroke-width:0.264583"
+         x="48.616856"
+         y="233.8969">$b$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583;fill:#000000"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;fill:#000000;stroke-width:0.264583"
        x="53.13176"
        y="259.59134"
        id="text18549"><tspan
          sodipodi:role="line"
          id="tspan18547"
-         style="stroke-width:0.264583;fill:#000000"
+         style="fill:#000000;stroke-width:0.264583"
          x="53.13176"
-         y="259.59134">$\hat{x}$</tspan></text>
+         y="259.59134">$p$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583;fill:#000000"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;fill:#000000;stroke-width:0.264583"
        x="70.560005"
        y="237.36835"
        id="text25207"><tspan
          sodipodi:role="line"
          id="tspan25205"
-         style="stroke-width:0.264583;fill:#000000"
+         style="fill:#000000;stroke-width:0.264583"
          x="70.560005"
-         y="237.36835">$\tilde{x}$</tspan></text>
+         y="237.36835">$e$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583;fill:#000000"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;fill:#000000;stroke-width:0.264583"
        x="156.88547"
        y="280.50562"
        id="text34721"><tspan
          sodipodi:role="line"
          id="tspan34719"
-         style="stroke-width:0.264583;fill:#000000"
+         style="fill:#000000;stroke-width:0.264583"
          x="156.88547"
-         y="280.50562">$a$</tspan></text>
+         y="280.50562">$i$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583;fill:#000000"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;fill:#000000;stroke-width:0.264583"
        x="39.362865"
        y="184.64041"
        id="text39873"><tspan
          sodipodi:role="line"
          id="tspan39871"
-         style="stroke-width:0.264583;fill:#000000"
+         style="fill:#000000;stroke-width:0.264583"
          x="39.362865"
-         y="184.64041">$b$</tspan></text>
+         y="184.64041">$j$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583;fill:#000000"
@@ -227,18 +227,22 @@
        style="font-size:21.3333px;line-height:1.25;font-family:sans-serif;word-spacing:0px;white-space:pre;shape-inside:url(#rect1477);fill:#000000" />
     <text
        xml:space="preserve"
-       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583;fill:#000000"
-       x="94.421066"
-       y="252.54202"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;fill:#000000;stroke-width:0.264583"
+       x="90.514313"
+       y="254.17659"
        id="text4849"><tspan
          sodipodi:role="line"
          id="tspan4847"
-         style="stroke-width:0.264583;fill:#000000"
-         x="94.421066"
-         y="252.54202">$y$</tspan></text>
+         style="fill:#000000;stroke-width:0.264583"
+         x="90.514313"
+         y="254.17659">$q$</tspan></text>
     <path
        style="fill:#000000;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#SquareS);marker-end:url(#SquareS)"
        d="M 39.679724,277.07539 124.20619,228.27402"
        id="path6602" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="M 38.416653,275.17988 71.166589,212.79246"
+       id="path25834" />
   </g>
 </svg>

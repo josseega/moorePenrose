@@ -57,10 +57,10 @@
     \put(0.45141771,0.71929671){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i$\end{tabular}}}}%
     \put(0.94671828,0.00755341){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$j$\end{tabular}}}}%
     \put(0.02037343,0.01274543){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$k$\end{tabular}}}}%
-    \put(0.77078207,0.42137127){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\bar{x}$\end{tabular}}}}%
-    \put(0.54047541,0.05321792){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\bar{z}$\end{tabular}}}}%
+    \put(0.77078207,0.42137127){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}${x}_\ast$\end{tabular}}}}%
+    \put(0.54047541,0.05321792){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}${z}_\ast$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{transRankcomp.pdf}}%
-    \put(0.67614263,0.18667669){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$H$\end{tabular}}}}%
-    \put(0.55778947,0.24767976){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$H^{-1}$\end{tabular}}}}%
+    \put(0.67614263,0.18667669){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$H_3$\end{tabular}}}}%
+    \put(0.55778947,0.24767976){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$H_3^{-1}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

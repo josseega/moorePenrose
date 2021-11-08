@@ -56,7 +56,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.9887478"
      inkscape:cx="320.05064"
-     inkscape:cy="206.41129"
+     inkscape:cy="206.15988"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -157,7 +157,7 @@
          id="tspan21856-6-5"
          style="stroke-width:0.264013"
          x="152.44629"
-         y="230.59151">$\bar{x}$</tspan></text>
+         y="230.59151">${x}_\ast$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.63228px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264013"
@@ -168,7 +168,7 @@
          id="tspan21856-6-5-5"
          style="stroke-width:0.264013"
          x="116.72503"
-         y="287.69321">$\bar{z}$</tspan></text>
+         y="287.69321">${z}_\ast$</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.416884px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        d="m 112.4993,261.13809 c 0,0 8.46005,1.89337 5.86991,-13.98642"
@@ -187,7 +187,7 @@
          id="tspan46039"
          style="stroke-width:0.264013"
          x="137.76743"
-         y="266.99335">$H$</tspan></text>
+         y="266.99335">$H_3$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.63228px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264013"
@@ -198,6 +198,6 @@
          id="tspan46039-2"
          style="stroke-width:0.264013"
          x="119.41049"
-         y="257.53159">$H^{-1}$</tspan></text>
+         y="257.53159">$H_3^{-1}$</tspan></text>
   </g>
 </svg>

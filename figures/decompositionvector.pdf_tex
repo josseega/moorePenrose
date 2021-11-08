@@ -55,13 +55,13 @@
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{decompositionvector.pdf}}%
     \put(0.70665809,0.63478257){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathcal{L}$\end{tabular}}}}%
-    \put(0.87014992,0.04089909){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
-    \put(0.19520524,0.64558965){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0.88235534,0.04291231){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i$\end{tabular}}}}%
+    \put(0.2108678,0.64626158){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$j$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{decompositionvector.pdf}}%
-    \put(0.31997445,0.26951083){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\hat{x}$\end{tabular}}}}%
-    \put(0.5729367,0.3682915){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde{x}$\end{tabular}}}}%
+    \put(0.31997445,0.26951083){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$p$\end{tabular}}}}%
+    \put(0.5729367,0.3682915){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$e$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{decompositionvector.pdf}}%
-    \put(0.64224944,0.25467677){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
+    \put(0.64224944,0.25467677){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{decompositionvector.pdf}}%
   \end{picture}%
 \endgroup%
