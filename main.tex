@@ -405,7 +405,60 @@ of $b$ to the \textcolor{violet}{manifold} $\mathcal{L}$.
 	\[\hat{x}= A^Ty,\]
 	\noindent satisfying
 	\[ A^T A \hat{x} = A^T b. \]
+
+Therefore, 
+
+\[ 	\hat x = (A^T A )^{-1} A^T b.	\]
+
+The Moore-Penrose Pseudoinverse is defined by
+
+\[ (A^T A )^{-1} A^T \]\\
+
+Ps. Try to proof that if A is \textit{full-column rank} the square matrix is invertible.
+
 \end{frame}
 
+\begin{frame} % Satelite example
+	\frametitle{Motivational Example}  % {Motivational Example}
+	\begin{columns}
+
+	\column{0.49\linewidth}
+
+	Consider the following equation:
+
+	\begin{equation*}
+		\underbrace{\begin{bmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 6 \end{bmatrix}}_A \begin{bmatrix} i \\ j  \end{bmatrix} = \begin{bmatrix} 10 \\ 10 \\ 30 \end{bmatrix}
+	\end{equation*}
+
+So, the best possible solution of this system is:
+
+\begin{align*}
+	A x &= b \\
+	A^+ A x &= A^+ b \\
+	x &= A^+ b\\
+	x & = [3.8 \quad 4.28]^T
+\end{align*}
+	\column{0.49\linewidth}
+	\begin{figure}[ht]
+    		\centering
+	    \incfig{satelite}
+	\end{figure}
+	\end{columns}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Example}
+
+	Consider a classical least square problem, find the best solution:
+
+\begin{figure}[ht]
+    \centering
+    \incfig{leastsquare}
+    \label{fig:leastsquare}
+\end{figure}
+
+
+\end{frame}
 
 \end{document}
