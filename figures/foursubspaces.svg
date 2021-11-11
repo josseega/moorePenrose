@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="foursubspaces.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6250281"
+     inkscape:cx="671.5522"
+     inkscape:cy="222.13222"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1412"
+     inkscape:window-x="1080"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect845"
+       width="48.985493"
+       height="48.985493"
+       x="13.508013"
+       y="186.63771" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect845-3"
+       width="48.985493"
+       height="48.985493"
+       x="62.493515"
+       y="235.6232" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect845-6"
+       width="48.985493"
+       height="48.985493"
+       x="127.88313"
+       y="186.63771" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect845-3-7"
+       width="48.985493"
+       height="48.985493"
+       x="176.86835"
+       y="235.6232" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="22.749968"
+       y="205.10419"
+       id="text3332"><tspan
+         sodipodi:role="line"
+         id="tspan3330"
+         style="stroke-width:0.264583"
+         x="22.749968"
+         y="205.10419">Row Space</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="131.96559"
+       y="204.84808"
+       id="text6306"><tspan
+         sodipodi:role="line"
+         id="tspan6304"
+         style="stroke-width:0.264583"
+         x="131.96559"
+         y="204.84808">Column Space</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="30.723034"
+       y="219.70047"
+       id="text8282"><tspan
+         sodipodi:role="line"
+         id="tspan8280"
+         style="stroke-width:0.264583"
+         x="30.723034"
+         y="219.70047">$\mathcal{R}(A^T)$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="147.93962"
+       y="219.92561"
+       id="text8282-5"><tspan
+         sodipodi:role="line"
+         id="tspan8280-3"
+         style="stroke-width:0.264583"
+         x="147.93962"
+         y="219.92561">$\mathcal{R}(A)$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="71.637665"
+       y="251.61481"
+       id="text30924"><tspan
+         sodipodi:role="line"
+         id="tspan30922"
+         style="stroke-width:0.264583"
+         x="71.637665"
+         y="251.61481">Null Space</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="76.613029"
+       y="266.88004"
+       id="text34096"><tspan
+         sodipodi:role="line"
+         id="tspan34094"
+         style="stroke-width:0.264583"
+         x="76.613029"
+         y="266.88004">$\mathcal{N}(A)$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="187.23938"
+       y="251.90823"
+       id="text30924-5"><tspan
+         sodipodi:role="line"
+         id="tspan30922-6"
+         style="stroke-width:0.264583"
+         x="187.23938"
+         y="251.90823">Null Space</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="192.8508"
+       y="266.95892"
+       id="text34096-2"><tspan
+         sodipodi:role="line"
+         id="tspan34094-9"
+         style="stroke-width:0.264583"
+         x="192.8508"
+         y="266.95892">$\mathcal{N}(A^T)$</tspan></text>
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect50358"
+       width="2.4615841"
+       height="2.4615841"
+       x="61.181519"
+       y="234.49947" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect50358-7"
+       width="2.4615841"
+       height="2.4615841"
+       x="175.53725"
+       y="234.4648" />
+  </g>
+</svg>

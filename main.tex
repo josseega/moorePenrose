@@ -14,7 +14,7 @@
 \author{J. Antonio Ortega}
 \institute{UNAM} 
 \date{\today}
-
+\logo{\includegraphics[width=10mm]{./figures/logoFI.pdf}  }
 
 %% Definitions
 
@@ -32,6 +32,61 @@
 
 \frame{\titlepage}
 
+\begin{frame} % 3 subsystems
+	\frametitle{Motivational Example}  % {Motivational Example}
+	\begin{columns}
+
+	\column{0.49\linewidth}
+	
+
+	Consider the following equation:
+
+	\begin{equation*}
+		\underbrace{\begin{bmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 6 \end{bmatrix}}_A \begin{bmatrix} i \\ j  \end{bmatrix} = \begin{bmatrix} 2 \\ 3 \\ 8\end{bmatrix}
+	\end{equation*}
+	
+
+	\column{0.49\linewidth}
+	\begin{figure}[ht]
+    		\centering
+	    \incfig{satelite}
+	\end{figure}
+	\end{columns}
+
+
+\end{frame}
+
+\begin{frame} % 3 subsystems
+	\frametitle{Motivational Example}  % {Motivational Example}
+	\begin{columns}
+
+	\column{0.49\linewidth}
+	
+
+	
+It can be seen as tree different subsystems:
+
+\begin{equation*}
+	\Sigma_1 := \left\{  \begin{bmatrix}	1 & 1 \\ 1 & 2	\end{bmatrix} \begin{bmatrix}	i \\ j	\end{bmatrix} = \begin{bmatrix} 2 \\ 3 \end{bmatrix}\right. \implies \quad [i, \, j]^T = [1, \, 1]^T
+\end{equation*}
+
+\begin{equation*}
+	\Sigma_2 := \left\{  \begin{bmatrix}	1 & 1 \\ 1 & 6	\end{bmatrix} \begin{bmatrix}	i \\ j	\end{bmatrix} = \begin{bmatrix} 2 \\ 8 \end{bmatrix}\right. \implies \quad [i, \, j]^T = [0.8 , \, 1.2 ]^T
+\end{equation*}
+
+\begin{equation*}
+	\Sigma_3 := \left\{  \begin{bmatrix}	1 & 2 \\ 1 & 6	\end{bmatrix} \begin{bmatrix}	i \\ j	\end{bmatrix} = \begin{bmatrix} 3 \\ 8 \end{bmatrix}\right. \implies \quad [i, \, j]^T = [0.5, \, 0.25]^T
+\end{equation*}
+
+	\column{0.49\linewidth}
+	\begin{figure}[ht]
+    		\centering
+	    \incfig{satelite}
+	\end{figure}
+	\end{columns}
+
+
+\end{frame}
 
 \begin{frame} % Satelite example
 	\frametitle{Motivational Example}  % {Motivational Example}
@@ -60,6 +115,8 @@
 
 
 \end{frame}
+
+
 
 \begin{frame} % Problem statement
 	\frametitle{How to solve it in the \textit{best possible way}?}
@@ -250,6 +307,18 @@ of $b$ to the \textcolor{violet}{manifold} $\mathcal{L}$.
 
 \end{comment}
 
+\begin{frame} % The Four Subspaces
+	\frametitle{A little recall}{The four subspaces of lineal algebra}
+ 
+\begin{figure}[ht]
+    \centering
+    \incfig{foursubspaces}
+    \caption{fourSubspaces}
+    \label{fig:foursubspaces}
+\end{figure}
+
+\end{frame}
+
 \begin{frame}{} % minimizationTheorem
 	
 {\color{violet} \textbf{Theorem}:} Let $b$ be an $n-$dimensional real vector and $A \in \mathbb{R}^{n \times m}$.\\
@@ -257,7 +326,7 @@ of $b$ to the \textcolor{violet}{manifold} $\mathcal{L}$.
 \begin{itemize}
 	\item \textcolor{violet}{1.} There is always a vector, in fact a unique vector $\hat{x}$ of minimal (Euclidian norm), which minimizes
 
-	\[ \Vert b - A \hat{x} \Vert^2. \]
+		\[\hat x = argmin \left( \Vert b - A x \Vert^2 \right) . \]
 	
 	\item \textcolor{violet}{2.}The vector $\hat{x}$ is the unique vector in the range
 		
@@ -267,7 +336,7 @@ of $b$ to the \textcolor{violet}{manifold} $\mathcal{L}$.
 	
 	\[ A \hat{x} = p \]
 	
-	\noindent where $\hat{p}$ is the projection of $b$ on $\mathcal{R}(A) = \mathcal{C}(A).$
+	\noindent where $p$ is the projection of $b$ on $\mathcal{R}(A) = \mathcal{C}(A).$
 
 	\end{itemize}
 \end{frame}
@@ -418,6 +487,22 @@ Ps. Try to proof that if A is \textit{full-column rank} the square matrix is inv
 
 \end{frame}
 
+\begin{frame}
+	\frametitle{$A^T A$ is invertible if it's full-column rank }
+
+	Consider that 
+	\[  A^T A x =0.  \]
+	
+	Thus, the column space $\mathcal{C}(A)$ is in the null space of $A^T$. But we know that $ \mathcal{C}(A) \perp \mathcal{N}(A^T) $, which implies that $A x = 0$.
+
+
+
+If $A$ is full-column rank, the columns are linearly independient, which implies that if $A x = 0 \implies x = 0$.\\
+
+	Therefore $\mathcal{N}(A^T A) = \{ 0 \}$  which implies that $A^T A$ is invertible.
+
+\end{frame}
+
 \begin{frame} % Satelite example
 	\frametitle{Motivational Example}  % {Motivational Example}
 	\begin{columns}
@@ -427,7 +512,61 @@ Ps. Try to proof that if A is \textit{full-column rank} the square matrix is inv
 	Consider the following equation:
 
 	\begin{equation*}
-		\underbrace{\begin{bmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 6 \end{bmatrix}}_A \begin{bmatrix} i \\ j  \end{bmatrix} = \begin{bmatrix} 10 \\ 10 \\ 30 \end{bmatrix}
+		\underbrace{\begin{bmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 6 \end{bmatrix}}_A \begin{bmatrix} i \\ j  \end{bmatrix} = \begin{bmatrix} 2 \\ 3 \\ 8 \end{bmatrix}
+	\end{equation*}
+
+	We need to minimize $ \Vert Ax - b  \Vert^2$
+
+	\[ \Vert Ax - b  \Vert^2 = (i + j -2)^2 + (i + 2j -3)^2 + (i + 6j -8)^2 \] 
+		
+
+	\column{0.49\linewidth}
+	\begin{figure}[ht]
+    		\centering
+	    \incfig{satelite}
+	\end{figure}
+	\end{columns}
+
+\end{frame}
+
+\begin{frame}[t]
+	\frametitle{Motivational Example}  % {Motivational Example}
+	
+	\[ \Vert Ax - b  \Vert^2 = (i + j -2)^2 + (i + 2j -3)^2 + (i + 6j -8)^2 \] 
+
+	\begin{align*}
+		\frac{\partial}{\partial i}(\Vert Ax - b  \Vert^2 ) &= 0 \implies 3i  + 9j = 13 \\
+		\frac{\partial}{\partial j}(\Vert Ax - b  \Vert^2 ) &= 0 \implies 9i + 41 j = 56
+	\end{align*}
+
+\begin{columns}	
+
+\column{0.49\linewidth}
+
+\[ \Sigma_m := \left\{ \begin{matrix} 3i  + 9j = 13 \\ 9i + 41 j = 56 \end{matrix} \right. \]
+
+\[  [i, \, j]_{\Sigma m} = [0.6905 , \, 1.2143] \]
+
+\column{0.49\linewidth}
+
+Do you remember the expression $ A^T A \hat x = A^T b $
+
+\[ A^TA = \begin{bmatrix} 3 & 9 \\ 9 & 41 \end{bmatrix} \textnormal{ and } A^T b =  \begin{bmatrix} 13 & 56 \end{bmatrix} \] 
+
+\end{columns}
+\end{frame}
+
+
+\begin{frame} % Satelite example
+	\frametitle{Motivational Example}  % {Motivational Example}
+	\begin{columns}
+
+	\column{0.49\linewidth}
+
+	Consider the following equation:
+
+	\begin{equation*}
+		\underbrace{\begin{bmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 6 \end{bmatrix}}_A \begin{bmatrix} i \\ j  \end{bmatrix} = \begin{bmatrix} 2 \\ 3 \\ 8 \end{bmatrix}
 	\end{equation*}
 
 So, the best possible solution of this system is:
@@ -436,7 +575,7 @@ So, the best possible solution of this system is:
 	A x &= b \\
 	A^+ A x &= A^+ b \\
 	x &= A^+ b\\
-	x & = [3.8 \quad 4.28]^T
+	x & = [0.6905 \quad 1.2143]^T
 \end{align*}
 	\column{0.49\linewidth}
 	\begin{figure}[ht]
@@ -449,8 +588,23 @@ So, the best possible solution of this system is:
 
 \begin{frame}
 	\frametitle{Example}
+\begin{columns}
 
-	Consider a classical least square problem, find the best solution:
+\column{0.49\linewidth}
+
+	Consider a classical least square problem, find the line that mimize the distance of all the points to the line.\\
+
+
+	We consider a line $ y = \alpha x + \beta$, thus we can write the following system
+
+	\begin{align*}
+		\beta + 2 \alpha &= 2 \\	
+		\beta + 3 \alpha &= 4 \\	
+		\beta + 4 \alpha &= 6 \\	
+		\beta + 6 \alpha &= 5	
+	\end{align*}
+
+\column{0.49\linewidth}
 
 \begin{figure}[ht]
     \centering
@@ -458,6 +612,7 @@ So, the best possible solution of this system is:
     \label{fig:leastsquare}
 \end{figure}
 
+\end{columns}
 
 \end{frame}
 
